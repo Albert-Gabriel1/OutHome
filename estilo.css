@@ -13,11 +13,14 @@ nav{
     padding: 20px 0;
     background: #4F8A70;
 }
+header h1{
+    color: #FFFFFF;
+}
 h1{
     text-align: center;
     display: block;
     margin: auto;
-    Color: #56967a;
+    Color: #164A41;
 }
 menu{
     display: flex;
@@ -35,7 +38,8 @@ header{
     font-style: normal;
 }
 nav a{
-    background-color: #2D3748;
+    background-color: #164A41;
+    color: #FFFFFF;
     padding: 8px;
     margin: 5px;
     text-align: center;
@@ -51,4 +55,10 @@ main{
 }
 #logo{
     width: 100px;
+}
+a{
+    color: #164A41;
+}
+a:hover{
+    background-color: #D96F1F;
 }
