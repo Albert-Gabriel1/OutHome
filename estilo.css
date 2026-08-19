@@ -13,9 +13,6 @@ nav{
     padding: 20px 0;
     background: #4F8A70;
 }
-header h1{
-    color: #FFFFFF;
-}
 h1{
     text-align: center;
     display: block;
@@ -24,10 +21,9 @@ h1{
 }
 menu{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
     margin: 0;
+    justify-content: space-between;
 }
 header{
     width: 100%;
@@ -47,6 +43,16 @@ nav a{
     color: #FFFFFF;
     text-decoration: none;
 }
+#login{
+    padding: 8px;
+    padding-top: 30px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #D96F1F;
+}   
 main{
     background-color: #F7F4ED;
     font-family: "Lato", sans-serif;
@@ -55,10 +61,21 @@ main{
 }
 #logo{
     width: 100px;
+    margin: auto;
+    display: block;
+    
 }
 a{
     color: #164A41;
 }
 a:hover{
     background-color: #D96F1F;
+}
+menu a{
+    color: white;
+    width: 60px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
 }
