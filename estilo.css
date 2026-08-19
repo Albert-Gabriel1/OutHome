@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    color: #202624;
+}
+/* Estilo do nav */
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 0;
+    background: #4F8A70;
+}
+h1{
+    text-align: center;
+    display: block;
+    margin: auto;
+    Color: #56967a;
+}
+menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    margin: 0;
+}
+header{
+    width: 100%;
+    background-color: #164A41;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+nav a{
+    background-color: #2D3748;
+    padding: 8px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+main{
+    background-color: #F7F4ED;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#logo{
+    width: 100px;
+}
