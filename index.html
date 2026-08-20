@@ -21,15 +21,29 @@
     </header>
     <main>
        <h1>Bem-vindo à OutHome</h1>
-       <div class="carrossel">
-    <div class="slides">
-    <div class="slide"><img src="img/italia.jpg" alt=""></div>
-    <div class="slide"><img src="img/img2.jpg" alt=""></div>
-    <div class="slide"><img src="img/img3.jpg" alt=""></div>
+       <div class="carousel-card" id="carousel" role="region" aria-label="Carrossel de destinos de viagem">
+  <div class="card-header">
+    <h2>Próximos destinos</h2>
+    <span>Embarque já</span>
+  </div>
+  <div class="perf"></div>
+ 
+  <div class="track-wrap">
+    <div class="track" id="track"></div>
+  </div>
+ 
+  <div class="controls">
+    <div class="dots" id="dots"></div>
+    <div class="arrows">
+      <button class="arrow-btn" id="prevBtn" aria-label="Anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="arrow-btn" id="nextBtn" aria-label="Próximo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
     </div>
-    <button class="anterior" onclick="mudarSlide(-1)">❮</button>
-    <button class="proximo" onclick="mudarSlide(1)">❯</button>
-    </div>
+  </div>
+</div>
 </div>
     </main>
     <footer>
