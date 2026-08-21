@@ -52,6 +52,8 @@ nav a{
     text-align: center;
     color: #0E2B35;
     background-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #D96F1F;
 }   
 main{
     background-color: #F7F4ED;
@@ -93,6 +95,7 @@ menu a{
     font-size: 9px;
     text-align: center;
     text-decoration: none;
+    background-color: #D96F1F;
 }
 :root{
     --night: #0E2B35;
