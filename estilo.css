@@ -54,7 +54,12 @@ nav a{
     background-color: #FFFFFF;
     color: #FFFFFF;
     background-color: #D96F1F;
-}   
+}
+#login:hover{
+    background-color: #ffffff;
+    color: #d96f1f
+    ;
+}
 main{
     background-color: #F7F4ED;
     font-family: "Lato", sans-serif;
@@ -77,11 +82,11 @@ a{
     height: 30px;
 }
 #link-viagem{
-    transition: transform 1.3s ease;
+    transition: transform 1s ease;
     width: 25%;
 }
 #link-viagem:hover{
-   transform: translateX(15px);
+   transform: translateX(20px);
 }
 a:hover{
     text-decoration: underline;
