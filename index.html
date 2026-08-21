@@ -8,22 +8,63 @@
 </head>
 <body>
         <header>
+            <button id="login">Login</button>
             <menu>
                 <img src="img/perigo.png" alt="Logo da OutHome" id="logo">
-                <h1>OutHome</h1>
+                <a href="#"><img src="img/suporte.png" alt="" class="icon">Central de Ajuda</a>
             </menu>
         <nav>
         <a href="index.html">Explorar</a>
-        <a href="about.html">Como Funciona</a>
-        <a href="services.html">Entrar</a>
-        <a href="contact.html">Contato</a>
-    </nav>
+        <a href="about.html">Sobre Nós</a>
+        <a href="services.html">Versão Premium</a>
+        <a href="contact.html">Meus Projetos</a>
     </header>
     <main>
        <h1>Bem-vindo à OutHome</h1>
+       <div class="carousel-card" id="carousel" role="region" aria-label="Carrossel de destinos de viagem">
+  <div class="card-header">
+    <h2>Próximos destinos</h2>
+    <span>Embarque já</span>
+  </div>
+  <div class="perf"></div>
+ 
+  <div class="track-wrap">
+    <div class="track" id="track"></div>
+  </div>
+ 
+  <div class="controls">
+    <div class="dots" id="dots"></div>
+    <div class="arrows">
+      <button class="arrow-btn" id="prevBtn" aria-label="Anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="arrow-btn" id="nextBtn" aria-label="Próximo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+  </div>
+  <a href="roteiro.html"><h3 id="link-viagem">Criar minha viagem >>></h3></a>
+</div>
+</div>
+<div class="padrao">
+  <hr>
+  <h2>Exemplo</h2>
+  <hr>
+  <br>
+  <h3>🇮🇹 ITÁLIA 2027</h3>
+  <p>10 JUL → 20 JUL </p>
+  <br>
+  <p>09:00  📍 Coliseu</p>
+  <p>14:00  📍 Fórum Romano</p>
+  <p>19:30  🍝 Jantar </p>
+  <br>
+  <p>Orçamento estimado  </p>
+  <p>R$ 1.240</p>
+</div>
     </main>
     <footer>
 
     </footer>
+    <script src="js.js"></script>
 </body>
 </html>
