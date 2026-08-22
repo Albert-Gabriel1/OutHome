@@ -68,7 +68,6 @@ const destinos = [
       }, 700);
     }
   }
- 
   function prev(){
     index--;
     if(index < 0){
