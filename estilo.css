@@ -9,7 +9,7 @@ body{
 nav{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     padding: 20px;
     background: #4F8A70;
     flex-flow: row wrap;
@@ -22,9 +22,10 @@ h1{
 }
 menu{
     display: flex;
+    width: 90%;
+    margin: auto;
     align-items: center;
-    margin: 0;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 header{
     width: 100%;
@@ -73,6 +74,7 @@ main{
 }
 #logo{
     width: 100px;
+    height: 100px;
     margin: auto;
     display: block;
     
@@ -315,6 +317,7 @@ menu a{
     .track{ gap: 10px; }
     .slide{ flex: 0 0 calc((100% - 20px) / 2); }
     .card-header h2{ font-size:18px; }
+
     @media screen and (min-width: 320px) and (max-width: 1200px){
       .padrao{
       box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.1);
