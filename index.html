@@ -1,29 +1,144 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OutHome</title>
-    <link rel="stylesheet" href="estilo.css">
+<html lang="pt-br"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OutHome</title>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-        <header>
-            <menu>
-                <img src="img/perigo.png" alt="Logo da OutHome" id="logo">
-                <h1>OutHome</h1>
-            </menu>
-        <nav>
-        <a href="index.html">Explorar</a>
-        <a href="about.html">Como Funciona</a>
-        <a href="services.html">Entrar</a>
-        <a href="contact.html">Contato</a>
-    </nav>
-    </header>
-    <main>
-       <h1>Bem-vindo à OutHome</h1>
-    </main>
-    <footer>
+      <header>
+          <button id="login"> <a href="login.html">Login</a></button>
+          <menu>
+              <img src="img/perigo.png" alt="Logo da OutHome" id="logo">
+              <a href="#"><img src="img/suporte.png" alt="" class="icon">Central de Ajuda</a>
+          </menu>
+      <nav>
+      <a href="index.html">Explorar</a>
+      <a href="about.html">Sobre Nós</a>
+      <a href="services.html">Versão Premium</a>
+      <a href="contact.html">Meus Projetos</a>
+  </nav>
+</header>
+  <main>
+    <br>
+    <hr>
+    <br>
+     <h1>Bem-vindo à OutHome</h1>
+     <div class="carousel-card" id="carousel" role="region" aria-label="Carrossel de destinos de viagem">
+<div class="card-header">
+  <h2>Próximos destinos</h2>
+  <span>Embarque já</span>
+</div>
+<div class="perf"></div>
 
-    </footer>
-</body>
-</html>
+<div class="track-wrap">
+  <div class="track" id="track" style="transform: translateX(-827.917px);"><div class="slide">
+    <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=700&amp;q=80&amp;auto=format&amp;fit=crop" alt="Rio de Janeiro" loading="lazy">
+    <div class="tag">Praia</div>
+    <div class="slide-label">
+      <div class="flip-code">RIO</div>
+      <div class="flip-city">Rio de Janeiro</div>
+    </div>
+  </div><div class="slide">
+    <img src="https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=700&amp;q=80&amp;auto=format&amp;fit=crop" alt="Lisboa" loading="lazy">
+    <div class="tag">Cidade</div>
+    <div class="slide-label">
+      <div class="flip-code">LIS</div>
+      <div class="flip-city">Lisboa</div>
+    </div>
+  </div><div class="slide">
+    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=700&amp;q=80&amp;auto=format&amp;fit=crop" alt="Kyoto" loading="lazy">
+    <div class="tag">Cultura</div>
+    <div class="slide-label">
+      <div class="flip-code">KYO</div>
+      <div class="flip-city">Kyoto</div>
+    </div>
+  </div><div class="slide">
+    <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=700&amp;q=80&amp;auto=format&amp;fit=crop" alt="Santorini" loading="lazy">
+    <div class="tag">Ilha</div>
+    <div class="slide-label">
+      <div class="flip-code">SAN</div>
+      <div class="flip-city">Santorini</div>
+    </div>
+  </div><div class="slide">
+    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=700&amp;q=80&amp;auto=format&amp;fit=crop" alt="Patagônia" loading="lazy">
+    <div class="tag">Aventura</div>
+    <div class="slide-label">
+      <div class="flip-code">PAT</div>
+      <div class="flip-city">Patagônia</div>
+    </div>
+  </div><div class="slide">
+    <img src="https://images.unsplash.com/photo-1489493887464-892be6d1daae?w=700&amp;q=80&amp;auto=format&amp;fit=crop" alt="Marrakech" loading="lazy">
+    <div class="tag">Deserto</div>
+    <div class="slide-label">
+      <div class="flip-code">MAR</div>
+      <div class="flip-city">Marrakech</div>
+    </div>
+  </div><div class="slide">
+    <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=700&amp;q=80&amp;auto=format&amp;fit=crop" alt="Rio de Janeiro" loading="lazy">
+    <div class="tag">Praia</div>
+    <div class="slide-label">
+      <div class="flip-code">RIO</div>
+      <div class="flip-city">Rio de Janeiro</div>
+    </div>
+  </div><div class="slide">
+    <img src="https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=700&amp;q=80&amp;auto=format&amp;fit=crop" alt="Lisboa" loading="lazy">
+    <div class="tag">Cidade</div>
+    <div class="slide-label">
+      <div class="flip-code">LIS</div>
+      <div class="flip-city">Lisboa</div>
+    </div>
+  </div><div class="slide">
+    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=700&amp;q=80&amp;auto=format&amp;fit=crop" alt="Kyoto" loading="lazy">
+    <div class="tag">Cultura</div>
+    <div class="slide-label">
+      <div class="flip-code">KYO</div>
+      <div class="flip-city">Kyoto</div>
+    </div>
+  </div></div>
+</div>
+
+<div class="controls">
+  <div class="dots" id="dots"><button class="dot"></button><button class="dot"></button><button class="dot"></button><button class="dot"></button><button class="dot active"></button><button class="dot"></button></div>
+  <div class="arrows">
+    <button class="arrow-btn" id="prevBtn" aria-label="Anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"></path></svg>
+    </button>
+    <button class="arrow-btn" id="nextBtn" aria-label="Próximo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"></path></svg>
+    </button>
+  </div>
+</div>
+<a href="roteiro.html"><h3 id="link-viagem">Criar minha viagem &gt;&gt;&gt;</h3></a>
+</div>
+<br>
+<hr>
+<br>
+<div class="padrao">
+<div id="img-container1">
+  <img src="img/italia.png" alt="Imagem de viagem para a Itália">
+</div>
+<div id="text-container">
+<h2>Exemplo de Roteiro</h2>
+<br>
+<h3>🇮🇹 ITÁLIA 2027</h3>
+<p>10 JUL → 20 JUL </p>
+<hr>
+<br>
+<p>09:00 <img src="img/coliseu.png" alt="" class="icon"> Coliseu</p>  
+<p>14:00 📍 Fórum Romano</p>
+<p>19:30  🍝 Jantar </p>
+<br>
+<p>Orçamento estimado  </p>
+<p><img src="img/moedas.png" alt="" class="icon"> R$ 1.240</p>
+</div> 
+</div>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="js.js"></script>
+
+</body></html>
