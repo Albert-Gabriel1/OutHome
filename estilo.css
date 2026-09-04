@@ -311,19 +311,20 @@ menu a{
 #img-container1 img{
   max-width: 100%; 
   height:100%;
-  
+
 }
 #tela-login{
-  border: 1px solid black;
+  border-radius: 10px;
   border-radius: 0px 0px 10px 10px;
   width: 50%;
   min-height: 400px;
   padding: 20px;
   box-sizing: border-box;
+  background-color: #FFF7F3;
 }
 #tela-login h2{
   font-family: "Inter", sans-serif; 
-  color: #164A41;
+  color: #8E3568;
 }
 #tela-login form{
   display: flex;
@@ -332,16 +333,16 @@ menu a{
 #tela-login label{
   margin-bottom: 5px;
   font-weight: bold;
-  color: #164A41;
+  color: #8E3568;
 }
 #tela-login input{
   margin-bottom: 15px;
   padding: 8px;
-  border: 1px solid #164A41;
+  border: 1px solid #D85A7A;
   border-radius: 5px;
 }
 #login-body{
-  background-image: url(img/The-Drive.gif);
+  background-image: url(img/fundo.gif);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -351,7 +352,7 @@ menu a{
   font-style: normal;
 }
 #header-login{
-  background-image: linear-gradient(to bottom, #FF512F,#DD2476);
+  background-image: linear-gradient(to bottom, #FF8066, #F04475, #8E3568);
   min-height: 500px;
   width: 50%;
   font-family: "Montserrat", sans-serif;
@@ -360,7 +361,7 @@ menu a{
   text-align: center;
   padding: 15px;
   font-weight: 100;
-  color: #FFFFFF;
+  color: #FFF7F3;
   display: flex;
 }
 #login-container{
@@ -368,7 +369,7 @@ menu a{
     width: 80%;
     max-width: 900px;
     margin: 50px auto;
-    border: 1px solid black;
+    border: 1px solid #D85A7A;
     border-radius: 10px;
     overflow: hidden;;
 }
