@@ -314,14 +314,46 @@ menu a{
   
 }
 #tela-login{
-  width: 50%;
   border: 1px solid black;
-  margin: auto;
-  
+  border-radius: 0px 0px 10px 10px;
+  width: 50%;
+  min-height: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#tela-login h2{
+  font-family: "Inter", sans-serif; 
+  color: #164A41;
+}
+#tela-login form{
+  display: flex;
+  flex-direction: column;
+}
+#tela-login label{
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #164A41;
+}
+#tela-login input{
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #164A41;
+  border-radius: 5px;
+}
+#login-body{
+  background-image: url(img/The-Drive.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  font-weight: lighter;
+  font-style: normal;
 }
 #header-login{
   background-image: linear-gradient(to bottom, #FF512F,#DD2476);
-  height: 100px;
+  min-height: 500px;
+  width: 50%;
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   font-style: normal;
@@ -329,6 +361,16 @@ menu a{
   padding: 15px;
   font-weight: 100;
   color: #FFFFFF;
+  display: flex;
+}
+#login-container{
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;;
 }
  
   .arrow-btn svg{ width:16px; height:16px; }
@@ -353,7 +395,7 @@ menu a{
       margin: auto;
       padding: 15px;
       border-radius: 10px;
-      width: 50%;
+      width: 60%;
       text-align: justify;
       display: block;
     }

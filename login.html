@@ -6,7 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body id="login-body">
     <header>
         <button id="login"> <a href="login.html">Login</a></button>
         <menu>
@@ -21,11 +21,26 @@
 </nav>
 </header>
 <br>
+<div id="login-container">   
+    <div id="header-login">
+        <h2>Seja Bem Vindo</h2>
+    </div>
     <div id="tela-login">
-        <div id="header-login">
-            <h2>Seja Bem Vindo</h2>
-        </div>
-        <p>a</p>
+        <h2>Fazer Login</h2>
+        <br>
+        <p>Digite seus dados para acessar sua conta.</p>
+        <br>
+        <form action="login.php" method="get">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="📧 Email" required>
+            <br>
+            <label for="password">Senha</label>  
+            <input type="password" name="password" placeholder="🔑 Senha" required>
+            <br>
+            <button type="submit">Entrar</button>
+            <a href="forgot-password.html">Esqueceu sua senha?</a>
+            <a href="register.html">Não tem uma conta? Cadastre-se aqui.</a>
+        </form>
     </div>
 </body>
 </html>
