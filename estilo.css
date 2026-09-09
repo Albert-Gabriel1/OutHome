@@ -49,22 +49,20 @@ nav a{
     text-decoration: none;
     flex-flow: row wrap;
 }
-#login{
+#login {
+    display: inline-block;
     padding: 8px;
     padding-top: 30px;
     margin-left: 5px;
-    border: none;
     border-radius: 0px 0px 10px 10px;
     text-align: center;
+    text-decoration: none;
     color: #0E2B35;
-    background-color: #FFFFFF;
-    
     background-color: #D96F1F;
 }
-#login:hover{
-    background-color: #ffffff;
-    color: #d96f1f
-    ;
+#login:hover {
+    background-color: #FFFFFF;
+    color: #D96F1F;
 }
 main{
     background-color: #F7F4ED;
@@ -148,6 +146,12 @@ menu a{
     letter-spacing: 0.3px;
   }
  
+  .card::after {
+    background: linear-gradient(
+        transparent 40%,
+        rgba(22, 74, 65, .85)
+    );
+}
   .card-header span{
     font-size: 11px;
     color: var(--slate);
@@ -304,8 +308,7 @@ menu a{
   padding: 15px;
 }
 #img-container1{
-  width: 50%;
-  min-width: 50%;
+  min-width: 40%;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -314,9 +317,42 @@ menu a{
   height:100%;
 
 }
+#seção_sobre{
+  width: 80%;
+  margin: 60px auto;
+  text-align: center;
+  padding: 20px;
+}
+.card{
+  flex: 1;
+    padding: 20px;
+}
+#card-container{
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+#seção_sobre p{
+  color: #202624;
+  line-height: 1.5;
+}
+#seção_sobre h2{
+  font-family: "Inter", sans-serif; 
+  color: #164A41;
+  font-size: 30px;
+  padding: 15px;
+}
+#seção_sobre h3{
+  font-family: "Inter", sans-serif; 
+}
+#seção_sobre span{
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
 #tela-login{
-  border-radius: 10px;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0 0 10px 10px;
   width: 50%;
   min-height: 400px;
   padding: 20px;
@@ -325,7 +361,7 @@ menu a{
 }
 #tela-login h2{
   font-family: "Inter", sans-serif; 
-  color: #8E3568;
+  color: #164A41;
 }
 #tela-login form{
   display: flex;
@@ -334,75 +370,72 @@ menu a{
 #tela-login label{
   margin-bottom: 5px;
   font-weight: bold;
-  color: #8E3568;
+  color: #164A41;
 }
 #tela-login input{
   margin-bottom: 15px;
   padding: 8px;
-  border: 1px solid #D85A7A;
+  border: 1px solid #4F8A70;
   border-radius: 5px;
 }
 #login-body{
-  background-image: url(img/fundo.gif);
+  background: #164A4A;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
+
   font-weight: lighter;
   font-style: normal;
 }
 #login-image{
-  background-image: linear-gradient(to bottom, #FF8066, #F04475, #8E3568);
   min-height: 500px;
   width: 50%;
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
-  font-style: normal;
+  font-style: bolder;
   text-align: center;
   padding: 15px;
-  font-weight: 100;
-  color: #FFF7F3;
+  font-weight: bolder;
+  color: #ffffff;
   display: block;
+  background-image:linear-gradient(rgba(22, 74, 65, 0.35), rgba(142, 53, 104, 0.45)),url(img/fundo_login.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 #login-container{
     display: flex;
     width: 80%;
     max-width: 900px;
     margin: 50px auto;
-    border: 1px solid #D85A7A;
     border-radius: 10px;
     overflow: hidden;
 }
 #login-button{
-  background-color: #8E3568;
+  background-color: #164A41;
   color: #FFF7F3;
   padding: 10px;
   border: none;
   margin:10px;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.8s ease;
-
+  transition: 0.3s ease;
 }
 #login-button:hover{
-  background-color: #F04475;
+  background-color: #4F8A70;
   transform: translateX(5px);
   padding: 12px;
   transition: transform 0.3s ease, box-shadow 0.6s ease;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
   
 }
-#login-image{
-  background-image: url(img/download.jfif);
-  background-repeat: no-repeat;
-  background-position:center;
-  background-size: cover;
-}
+
 form a{
   padding: 5px;
   text-decoration: none;
-  color: #F04475;
+  color: #164A41;
 }
 #login-image p{
   text-align: justify;
@@ -415,6 +448,33 @@ form a{
     .track{ gap: 10px; }
     .slide{ flex: 0 0 calc((100% - 20px) / 2); }
     .card-header h2{ font-size:18px; }
+    #login-container{
+      flex-direction: column;
+      width: 90%;
+      
+    }
+    #login-image,
+    #tela-login {
+        width: 100%;
+    }
+    @media (max-width: 640px) {
+
+    #seção_sobre {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #cards-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+}
+}
 
     @media screen and (min-width: 320px) and (max-width: 640px){
       nav{
@@ -442,4 +502,3 @@ form a{
       border-radius: 10px;
     }
     }
-  }
