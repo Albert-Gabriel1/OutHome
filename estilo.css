@@ -5,6 +5,7 @@ body{
     padding: 0;
     margin: 0;
     color: #202624;
+    transition: all 0.8s ease;
 }
 /* Estilo do nav */
 nav{
@@ -351,7 +352,7 @@ menu a{
   font-weight: lighter;
   font-style: normal;
 }
-#header-login{
+#login-image{
   background-image: linear-gradient(to bottom, #FF8066, #F04475, #8E3568);
   min-height: 500px;
   width: 50%;
@@ -362,7 +363,7 @@ menu a{
   padding: 15px;
   font-weight: 100;
   color: #FFF7F3;
-  display: flex;
+  display: block;
 }
 #login-container{
     display: flex;
@@ -371,7 +372,41 @@ menu a{
     margin: 50px auto;
     border: 1px solid #D85A7A;
     border-radius: 10px;
-    overflow: hidden;;
+    overflow: hidden;
+}
+#login-button{
+  background-color: #8E3568;
+  color: #FFF7F3;
+  padding: 10px;
+  border: none;
+  margin:10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+
+}
+#login-button:hover{
+  background-color: #F04475;
+  transform: translateX(5px);
+  padding: 12px;
+  transition: transform 0.3s ease, box-shadow 0.6s ease;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+  
+}
+#login-image{
+  background-image: url(img/download.jfif);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+form a{
+  padding: 5px;
+  text-decoration: none;
+  color: #F04475;
+}
+#login-image p{
+  text-align: justify;
+  padding: 10px;
 }
  
   .arrow-btn svg{ width:16px; height:16px; }
