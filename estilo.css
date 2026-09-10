@@ -351,7 +351,7 @@ menu a{
   font-size: 24px;
   margin-bottom: 10px;
 }
-#tela-login{
+#tela-login ,#tela-cadastro{
   border-radius: 0 0 10px 10px;
   width: 50%;
   min-height: 400px;
@@ -359,26 +359,26 @@ menu a{
   box-sizing: border-box;
   background-color: #FFF7F3;
 }
-#tela-login h2{
+#tela-login h2, #tela-cadastro h2{
   font-family: "Inter", sans-serif; 
-  color: #164A41;
+  color: #164A4A;
 }
-#tela-login form{
+#tela-login form, #tela-cadastro form{
   display: flex;
   flex-direction: column;
 }
-#tela-login label{
+#tela-login label, #tela-cadastro label{
   margin-bottom: 5px;
   font-weight: bold;
   color: #164A41;
 }
-#tela-login input{
+#tela-login input, #tela-cadastro input{
   margin-bottom: 15px;
   padding: 8px;
   border: 1px solid #4F8A70;
   border-radius: 5px;
 }
-#login-body{
+#login-body,#cadastro-body{
   background: #164A4A;
   background-repeat: no-repeat;
   background-position: center center;
@@ -389,7 +389,7 @@ menu a{
   font-weight: lighter;
   font-style: normal;
 }
-#login-image{
+#login-image,#cadastro-image{
   min-height: 500px;
   width: 50%;
   font-family: "Montserrat", sans-serif;
@@ -400,12 +400,23 @@ menu a{
   font-weight: bolder;
   color: #ffffff;
   display: block;
-  background-image:linear-gradient(rgba(22, 74, 65, 0.35), rgba(142, 53, 104, 0.45)),url(img/fundo_login.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-#login-container{
+#login-image h1, #cadastro-image h1{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  color: #FFF7F3;
+}
+#login-image{
+  background-image:linear-gradient(rgba(22, 74, 65, 0.35), rgba(142, 53, 104, 0.45)),url(img/fundo_login.png);
+}
+#cadastro-image{
+  background-image:linear-gradient(rgba(22, 74, 65, 0.35), rgba(142, 53, 104, 0.45)),url(img/fundo.gif);
+}
+#login-container,#cadastro-container{
     display: flex;
     width: 80%;
     max-width: 900px;
@@ -413,7 +424,7 @@ menu a{
     border-radius: 10px;
     overflow: hidden;
 }
-#login-button{
+#login-button,#cadastro-button{
   background-color: #164A41;
   color: #FFF7F3;
   padding: 10px;
@@ -423,7 +434,7 @@ menu a{
   cursor: pointer;
   transition: 0.3s ease;
 }
-#login-button:hover{
+#login-button:hover,#cadastro-button:hover{
   background-color: #4F8A70;
   transform: translateX(5px);
   padding: 12px;
@@ -437,7 +448,7 @@ form a{
   text-decoration: none;
   color: #164A41;
 }
-#login-image p{
+#login-image p, #cadastro-image p{
   text-align: justify;
   padding: 10px;
 }
@@ -455,6 +466,15 @@ form a{
     }
     #login-image,
     #tela-login {
+        width: 100%;
+    }
+    #cadastro-container{
+      flex-direction: column;
+      width: 90%;
+      
+    }
+    #cadastro-image,
+    #tela-cadastro {
         width: 100%;
     }
     @media (max-width: 640px) {
