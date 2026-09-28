@@ -292,7 +292,7 @@ menu a{
   padding: 15px;
   border-radius: 10px;
   width: 80%;
-  height: 350px;
+  height: 550px;
   text-align: justify;
   display: flex;
   align-items: stretch;
@@ -309,6 +309,9 @@ menu a{
 #text-container{
   padding: 15px;
 }
+h1{
+  font-size: 40px;
+}
 #img-container1{
   min-width: 40%;
   overflow: hidden;
@@ -321,13 +324,19 @@ menu a{
 }
 #seção_sobre{
   width: 80%;
-  margin: 60px auto;
+  margin: 50px auto;
   text-align: center;
   padding: 20px;
 }
+
 .card{
+  color: white;
   flex: 1;
-    padding: 20px;
+  padding: 20px;
+  background-color: #4F8A70;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 15px;
 }
 #card-container{
   display: flex;
@@ -335,13 +344,13 @@ menu a{
   gap: 40px;
 }
 #seção_sobre p{
-  color: #202624;
+  color: white;
   line-height: 1.5;
 }
 #seção_sobre h2{
   font-family: "Inter", sans-serif; 
   color: #164A41;
-  font-size: 30px;
+  font-size: 40px;
   padding: 15px;
 }
 #seção_sobre h3{
@@ -520,6 +529,7 @@ form a{
     #img-container1{
       width: 100%;
       height: 200px;
+      margin: 15px;
       overflow: hidden;
       border-radius: 10px;
     }
