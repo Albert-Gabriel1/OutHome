@@ -29,6 +29,21 @@ h1{
   width: 80%;
   display: block;
 }
+#premium h2,p{
+  color: #164A41;
+  font-size: 25px;
+  text-align: center;
+}
+#botao{
+  width: 35%;
+  margin: auto;
+  display: block;
+  padding: 30px;
+  font-size: larger;
+  font-weight: bolder;
+  background-color: #164A41;
+  color: white;
+}
 menu{
     display: flex;
     width: 90%;
@@ -348,6 +363,115 @@ h1{
   justify-content: space-around;
   gap: 40px;
 }
+#premium {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#premium h2 {
+    color: #164A41;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#premium > p {
+    color: #202624;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+#planos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 90%;
+    margin: auto;
+    gap: 15px;
+}
+
+.plano {
+    width: 30.33%;
+    min-height: 380px;
+    padding: 25px;
+    background-color: #F1E4CE;
+    text-align: center;
+    border: 1px solid white;
+}
+.plano:hover{
+  box-shadow: 0px 2px 8px ;
+  transition: 0.5s ease;
+  transform: scale(1.1);
+}
+
+.plano h3 {
+    font-size: 14px;
+    color: #202624;
+    margin-bottom: 5px;
+}
+
+.plano h4 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #202624;
+    margin: 5px;
+}
+
+.plano span {
+    font-size: 14px;
+    color: #555;
+}
+
+.plano hr {
+    width: 70%;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 25px auto;
+}
+
+.plano p {
+    color: #202624;
+    font-size: 14px;
+    margin: 12px;
+}
+
+.plano button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: none;
+    background-color: white;
+    color: #164A41;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.plano button:hover {
+    background-color: #4ca37e;
+}
+
+.destaque {
+    background-color: #4F8A70;
+    box-shadow: 0px 3px 10px;
+    color: white;
+    transform: scale(1.03);
+    z-index: 2;
+}
+
+.destaque h3,
+.destaque h4,
+.destaque p,
+.destaque span {
+    color: white;
+}
+
+.destaque button {
+    background-color: #e9e9e9;
+}
+
+.destaque button:hover {
+    background-color: #4ca37e;
+}
 #seção_sobre p{
   color: white;
   line-height: 1.5;
@@ -492,7 +616,9 @@ footer a:hover {
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
   
 }
-
+#fundo_premium{
+  background-image: url();
+}
 form a{
   padding: 5px;
   text-decoration: none;
@@ -565,6 +691,8 @@ form a{
       text-align: justify;
       display: block;
     }
+    .plano {
+    width: 55.33%;}
     #img-container1{
       width: 100%;
       height: 200px;
