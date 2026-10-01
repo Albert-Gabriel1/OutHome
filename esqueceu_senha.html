@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OutHome</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-            <a href="login.html" id="login" >Login</a>
-            <menu>
-                <img src="img/perigo.png" alt="Logo da OutHome" id="logo">
-                <a href="#"><img src="img/suporte.png" alt="" class="icon">Central de Ajuda</a>
-            </menu>
-        <nav>
-        <a href="index.html">Explorar</a>
-        <a href="about.html">Sobre Nós</a>
-        <a href="premium.html">Versão Premium</a>
-        <a href="contact.html">Meus Projetos</a>
-    </header>
+        <menu>
+            <img src="img/perigo.png" alt="Logo da OutHome" id="logo">
+            <a href="#"><img src="img/suporte.png" alt="" class="icon">Central de Ajuda</a>
+        </menu>
+    <nav>
+    <a href="index.html">Explorar</a>
+    <a href="about.html">Sobre Nós</a>
+    <a href="premium.html">Versão Premium</a>
+    <a href="meus_projetos.html">Meus Projetos</a>
+</nav>
+</header>
+<main>
+    <section class="padrao2">
+        <div  id="">
+            <div class="">
+                <h1>Esqueceu sua senha?</h1>
+                <p>Não se preocupe! Insira seu e-mail abaixo e enviaremos instruções para redefinir sua senha.</p>
+                <form action="processar_esqueci_senha.php" method="POST" class="login-form">
+                    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
     <footer>
     <h2>OutHome</h2>
     <p>Transformando ideias em experiências digitais.</p>
