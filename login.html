@@ -1,67 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | OutHome</title>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body id="login-body">
-    <header>
+  <header id="inicio">
+        <a href="login.html" id="login">Login</a>
         <menu>
             <img src="img/Logo agência de viagens minimalista azul.png" alt="Logo da OutHome" id="logo">
             <a href="#"><img src="img/suporte.png" alt="" class="icon">Central de Ajuda</a>
         </menu>
-    <nav>
-    <a href="index.html">Explorar</a>
-    <a href="about.html">Sobre Nós</a>
-    <a href="premium.html">Versão Premium</a>
-    <a href="meus_projetos.html">Meus Projetos</a>
-</nav>
-</header>
-<br>
-<div id="login-container">   
+        <nav>
+            <a href="index.html">Explorar</a>
+            <a href="about.html">Sobre Nós</a>
+            <a href="premium.html">Versão Premium</a>
+            <a href="meus_projetos.html">Meus Projetos</a>
+            <a href="contact.html" aria-current="page">Contato</a>
+        </nav>
+    </header>
+
+  <div id="login-container">
     <div id="login-image">
-        <div>
-            <h1>Seja Bem Vindo</h1>
-            <br>
-                <h4>Planeje. Organize. Viaje.</h4>
-                <p>Crie roteiros personalizados, descubra novos destinos e tenha sua viagem sob controle antes mesmo de sair de casa.</p>
-        </div>
+      <div>
+        <h1>Seja Bem-vindo</h1>
+        <br>
+        <h4>Planeje. Organize. Viaje.</h4>
+        <p>Crie roteiros personalizados, descubra novos destinos e tenha sua viagem sob controle antes mesmo de sair de casa.</p>
+      </div>
     </div>
+
     <div id="tela-login">
-        <h2>Fazer Login</h2>
-        <br>
-        <p>Digite seus dados para acessar sua conta.</p>
-        <br>
-        <form action="login.js" method="get">
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="📧 Email" required>
-            <br>
-            <label for="password">Senha</label>  
-            <input type="password" name="password" placeholder="🔑 Senha" required>
-            <br>
-            <button type="submit" id="login-button">Entrar →</button>
-            <a href="esqueceu_senha.html">Esqueceu sua senha?</a>
-            <p>Não tem uma conta?<a href="register.html"> Cadastre-se aqui.</a></p>
-        </form>
+      <h2>Fazer Login</h2>
+      <p>Digite seus dados para acessar sua conta.</p>
+
+      <form id="login-form">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="📧 Email" autocomplete="email" required>
+
+        <label for="senha">Senha</label>
+        <input id="senha" type="password" name="senha" placeholder="🔑 Senha" autocomplete="current-password" required>
+
+        <button type="submit" id="login-button">Entrar →</button>
+
+        <p id="login-mensagem" role="alert"></p>
+
+        <a href="esqueceu_senha.html">Esqueceu sua senha?</a>
+        <p>Não tem uma conta? <a href="register.html">Cadastre-se aqui.</a></p>
+      </form>
     </div>
-</div>
-    <footer>
+  </div>
+
+  <footer>
     <h2>OutHome</h2>
     <p>Transformando ideias em experiências digitais.</p>
-
     <h3>Navegação</h3>
-    <p><a href="index.html">Início</a> • <a href="about.html">Sobre Nós</a> • <a href="premium.html">Versão Premium</a> • <a href="contato.html">Contato</a></p>
-
+    <p><a href="index.html">Início</a> • <a href="about.html">Sobre Nós</a> • <a href="premium.html">Versão Premium</a> • <a href="contact.html">Contato</a></p>
     <h3>Contato</h3>
-    <p>contato@exemplo.com</p>
-    <p>São Paulo — SP, Brasil</p>
+        <p>contato@exemplo.com</p>
+        <p>São Paulo — SP, Brasil</p>
 
-    <h3>Siga-nos</h3>
-    <p><a href="https://www.instagram.com/dinizraphaelcastro/" target="_blank"">Instagram</a> • <a href="https://www.linkedin.com/in/ana-clara-oliveira-santana-a78473320/" target="_blank"">LinkedIn</a> • <a href="https://github.com/Albert-Gabriel1" target="_blank"">GitHub</a></p>
-    <hr>
-    <p>© 2026 Nome do Site. Todos os direitos reservados.</p>
-</footer>
+        <h3>Siga-nos</h3>
+        <p>
+            <a href="https://www.instagram.com/dinizraphaelcastro/" target="_blank" rel="noopener noreferrer">Instagram</a> •
+            <a href="https://www.linkedin.com/in/ana-clara-oliveira-santana-a78473320/" target="_blank" rel="noopener noreferrer">LinkedIn</a> •
+            <a href="https://github.com/Albert-Gabriel1" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+
+        <hr>
+        <p>© 2026 OutHome. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="api.js"></script>
+  <script src="js/auth.js"></script>
 </body>
 </html>

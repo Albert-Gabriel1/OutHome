@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Projetos | OutHome</title>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    .painel-projetos { max-width: 1100px; margin: 30px auto; }
+    .painel-projetos form, .projeto-card, .dia-card {
+      background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 18px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.1);
+    }
+    .painel-projetos form { display:grid; gap:10px; }
+    .painel-projetos input, .painel-projetos textarea {
+      padding:10px; border:1px solid #4F8A70; border-radius:6px;
+    }
+    .painel-projetos button, .btn-projeto, .btn-excluir {
+      border:0; border-radius:6px; padding:10px 14px; cursor:pointer;
+      text-decoration:none; display:inline-block;
+    }
+    .painel-projetos button[type=submit], .btn-projeto { background:#164A41; color:#fff; }
+    .btn-excluir { background:#d96f1f; color:#fff; }
+    .projeto-acoes { display:flex; gap:10px; margin-top:12px; }
+    #lista-roteiros { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+    #lista-roteiros .projeto-card { margin:0; }
+    #roteiro-mensagem { color:#c0392b; text-align:left; font-size:14px; }
+  </style>
+</head>
+<body>
+<header id="inicio">
+        <a href="login.html" id="login">Login</a>
+        <menu>
+            <img src="img/Logo agência de viagens minimalista azul.png" alt="Logo da OutHome" id="logo">
+            <a href="#"><img src="img/suporte.png" alt="" class="icon">Central de Ajuda</a>
+        </menu>
+        <nav>
+            <a href="index.html">Explorar</a>
+            <a href="about.html">Sobre Nós</a>
+            <a href="premium.html">Versão Premium</a>
+            <a href="meus_projetos.html">Meus Projetos</a>
+            <a href="contact.html" aria-current="page">Contato</a>
+        </nav>
+    </header>
+
+<main>
+  <section class="painel-projetos">
+    <h1>Meus roteiros</h1>
+    <p>Olá, <strong id="usuario-nome"></strong>. Crie e organize suas viagens.</p>
+
+    <form id="novo-roteiro-form">
+      <h2>Novo roteiro</h2>
+      <label>Título</label>
+      <input name="titulo" required placeholder="Ex.: Itália 2027">
+
+      <label>Data de início</label>
+      <input type="date" name="data_inicio" required>
+
+      <label>Data de fim</label>
+      <input type="date" name="data_fim" required>
+
+      <label>Descrição</label>
+      <textarea name="descricao" rows="3" placeholder="O que você pretende fazer?"></textarea>
+
+      <label><input type="checkbox" name="publico"> Tornar público</label>
+
+      <button type="submit">Criar roteiro</button>
+      <p id="roteiro-mensagem"></p>
+    </form>
+
+    <h2>Seus projetos</h2>
+    <div id="lista-roteiros"></div>
+  </section>
+</main>
+
+<script src="api.js"></script>
+<script src="js/meus_projetos.js"></script>
+</body>
+</html>

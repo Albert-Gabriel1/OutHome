@@ -1,73 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro | OutHome</title>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body id="cadastro-body">
-     <header>
+  <header id="inicio">
+        <a href="login.html" id="login">Login</a>
         <menu>
-            <img src="img/Logo agência de viagens minimalista azul.png agência de viagens minimalista azul.png" alt="Logo da OutHome" id="logo">
+            <img src="img/Logo agência de viagens minimalista azul.png" alt="Logo da OutHome" id="logo">
             <a href="#"><img src="img/suporte.png" alt="" class="icon">Central de Ajuda</a>
         </menu>
-    <nav>
-    <a href="index.html">Explorar</a>
-    <a href="about.html">Sobre Nós</a>
-    <a href="premium.html">Versão Premium</a>
-    <a href="meus_projetos.html">Meus Projetos</a>
-</nav>
-</header>
-<div id="cadastro-container">   
+        <nav>
+            <a href="index.html">Explorar</a>
+            <a href="about.html">Sobre Nós</a>
+            <a href="premium.html">Versão Premium</a>
+            <a href="meus_projetos.html">Meus Projetos</a>
+            <a href="contact.html" aria-current="page">Contato</a>
+        </nav>
+    </header>
+
+  <div id="cadastro-container">
     <div id="cadastro-image">
-        <div>
-            <h1>Seja Bem Vindo</h1>
-            <br>
-                <h4>Planeje. Organize. Viaje.</h4>
-                <p>Crie roteiros personalizados, descubra novos destinos e tenha sua viagem sob controle antes mesmo de sair de casa.</p>
-        </div>
+      <div>
+        <h1>Seja Bem-vindo</h1>
+        <br>
+        <h4>Planeje. Organize. Viaje.</h4>
+        <p>Crie roteiros personalizados, descubra novos destinos e tenha sua viagem sob controle antes mesmo de sair de casa.</p>
+      </div>
     </div>
+
     <div id="tela-cadastro">
-        <h2>Fazer Cadastro</h2>
-        <br>
-        <p>Digite seus dados para criar sua conta.</p>
-        <br>
-        <form action="register.js" method="post">
-            <label for="name">Nome</label>
-            <input type="text" name="name" placeholder="👤 Nome" required>
-            <br>
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="📧 Email" required>
-            <br>
-            <label for="confirm-email">Confirmar Email</label>
-            <input type="email" name="confirm-email" placeholder="📧 Confirmar Email" required>
-            <br>
-            <label for="password">Senha</label>  
-            <input type="password" name="password" placeholder="🔑 Senha" required>
-            <br>
-            <label for="confirm-password">Confirmar Senha</label>
-            <input type="password" name="confirm-password" placeholder="🔑 Confirmar Senha" required>
-            <button type="submit" id="cadastro-button">Criar Conta</button>
-            <p>Já tem uma conta?<a href="login.html"> Faça login aqui.</a></p>
-        </form>
+      <h2>Fazer Cadastro</h2>
+      <p>Digite seus dados para criar sua conta.</p>
+
+      <form id="cadastro-form">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" name="nome" placeholder="👤 Nome" autocomplete="name" required>
+
+        <label for="cadastro-email">Email</label>
+        <input id="cadastro-email" type="email" name="email" placeholder="📧 Email" autocomplete="email" required>
+
+        <label for="confirm-email">Confirmar Email</label>
+        <input id="confirm-email" type="email" name="confirm_email" placeholder="📧 Confirmar Email" autocomplete="email" required>
+
+        <label for="cadastro-senha">Senha</label>
+        <input id="cadastro-senha" type="password" name="senha" placeholder="🔑 Senha" autocomplete="new-password" minlength="6" required>
+
+        <label for="confirm-password">Confirmar Senha</label>
+        <input id="confirm-password" type="password" name="confirm_senha" placeholder="🔑 Confirmar Senha" autocomplete="new-password" minlength="6" required>
+
+        <button type="submit" id="cadastro-button">Criar Conta</button>
+        <p id="cadastro-mensagem" role="alert"></p>
+        <p>Já tem uma conta? <a href="login.html">Faça login aqui.</a></p>
+      </form>
     </div>
-</div>
-    <footer>
+  </div>
+
+  <footer>
     <h2>OutHome</h2>
     <p>Transformando ideias em experiências digitais.</p>
-
     <h3>Navegação</h3>
-    <p><a href="index.html">Início</a> • <a href="about.html">Sobre Nós</a> • <a href="premium.html">Versão Premium</a> • <a href="contato.html">Contato</a></p>
-
+    <p><a href="index.html">Início</a> • <a href="about.html">Sobre Nós</a> • <a href="premium.html">Versão Premium</a> • <a href="contact.html">Contato</a></p>
     <h3>Contato</h3>
-    <p>contato@exemplo.com</p>
-    <p>São Paulo — SP, Brasil</p>
+        <p>contato@exemplo.com</p>
+        <p>São Paulo — SP, Brasil</p>
 
-    <h3>Siga-nos</h3>
-    <p><a href="https://www.instagram.com/dinizraphaelcastro/" target="_blank"">Instagram</a> • <a href="https://www.linkedin.com/in/ana-clara-oliveira-santana-a78473320/" target="_blank"">LinkedIn</a> • <a href="https://github.com/Albert-Gabriel1" target="_blank"">GitHub</a></p>
-    <hr>
-    <p>© 2026 Nome do Site. Todos os direitos reservados.</p>
-</footer>
+        <h3>Siga-nos</h3>
+        <p>
+            <a href="https://www.instagram.com/dinizraphaelcastro/" target="_blank" rel="noopener noreferrer">Instagram</a> •
+            <a href="https://www.linkedin.com/in/ana-clara-oliveira-santana-a78473320/" target="_blank" rel="noopener noreferrer">LinkedIn</a> •
+            <a href="https://github.com/Albert-Gabriel1" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+
+        <hr>
+        <p>© 2026 OutHome. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="api.js"></script>
+  <script src="js/auth.js"></script>
 </body>
 </html>

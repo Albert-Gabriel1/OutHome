@@ -115,7 +115,7 @@ router.get('/:id/orcamento', verificarToken, async (req, res) => {
        FROM dias_roteiro dr
        LEFT JOIN atividades a ON a.dia_id = dr.id
        WHERE dr.roteiro_id = ?
-       GROUP BY dr.id, dr.data
+       GROUP BY dr.id, dr.data, dr.ordem
        ORDER BY dr.ordem`,
       [id]
     );

@@ -1,33 +1,57 @@
-const express = require('express');
-const cors = require('cors');
-require('dotenv').config();
-const pool = require('./db');
+const express = require("express");
+const cors = require("cors");
+const path = require("path");
+require("dotenv").config();
+
+const pool = require("./db");
+
+const authRoutes = require("./routes/auth");
+const roteirosRoutes = require("./routes/roteiros");
+const destinosRoutes = require("./routes/destinos");
 
 const app = express();
-app.use(cors());
+
+app.use(
+  cors({
+    origin: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"]
+  })
+);
+
 app.use(express.json());
 
-const authRoutes = require('./routes/auth');
-app.use('/auth', authRoutes);
-
-const roteirosRoutes = require('./routes/roteiros');
-app.use('/roteiros', roteirosRoutes);
-
-const destinosRoutes = require('./routes/destinos');
-app.use('/destinos', destinosRoutes);
-
-app.get('/', (req, res) => {
-  res.json({ status: 'API do Site de Viagens rodando' });
+app.get("/", (req, res) => {
+  res.json({
+    status: "ok",
+    mensagem: "API do OutHome está funcionando."
+  });
 });
 
-app.get('/testar-banco', async (req, res) => {
+app.use("/auth", authRoutes);
+app.use("/roteiros", roteirosRoutes);
+app.use("/destinos", destinosRoutes);
+
+app.get("/testar-banco", async (req, res) => {
   try {
-    const [rows] = await pool.query('SHOW TABLES');
-    res.json(rows);
+    await pool.query("SELECT 1");
+    const [rows] = await pool.query("SHOW TABLES");
+
+    res.json({
+      conectado: true,
+      tabelas: rows
+    });
   } catch (err) {
-    res.status(500).json({ erro: err.message });
+    console.error("Erro ao testar banco:", err);
+    res.status(500).json({
+      conectado: false,
+      erro: "Não foi possível conectar ao banco de dados."
+    });
   }
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Servidor na porta ${PORT}`));
+const PORT = Number(process.env.PORT) || 3000;
+
+app.listen(PORT, () => {
+  console.log(`OutHome API rodando em http://localhost:${PORT}`);
+});
