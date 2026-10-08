@@ -46,7 +46,7 @@ h1{
 }
 menu{
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: auto;
     align-items: center;
     justify-content: space-around;
@@ -96,8 +96,8 @@ main{
     padding: 15px;
 }
 #logo{
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     margin: auto;
     display: block;
     
