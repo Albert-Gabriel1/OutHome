@@ -769,7 +769,7 @@ form a{
     }
     }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
 
     body {
         width: 100%;
@@ -1068,7 +1068,7 @@ form a{
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 380px) {
 
     nav {
         padding: 10px;
