@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "https://albert-gabriel1.github.io/OutHome/index.html";
 
 async function apiFetch(path, options = {}) {
   const token = localStorage.getItem("outhome_token");
