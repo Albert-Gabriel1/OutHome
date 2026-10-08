@@ -97,7 +97,7 @@ main{
 }
 #logo{
     width: 400px;
-    height: 200px;
+    height: 250px;
     margin: auto;
     display: block;
     
@@ -727,7 +727,10 @@ form a{
         flex-direction: column;
         gap: 10px;
     }
-
+    #logo{
+      width: 50%;
+      height: 50%;
+    }
     .card {
         padding: 15px;
     }
