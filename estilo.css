@@ -727,6 +727,7 @@ form a{
         flex-direction: column;
         gap: 10px;
     }
+    
     #logo{
       width: 50%;
       height: 50%;
@@ -767,3 +768,395 @@ form a{
       border-radius: 10px;
     }
     }
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    header,
+    nav {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+        padding: 12px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    nav a {
+        width: 100%;
+        margin: 0;
+        padding: 11px 8px;
+        font-size: 14px;
+    }
+
+    menu {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin: 0;
+    }
+
+    menu a {
+        width: auto;
+        min-width: 75px;
+        margin: 0;
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    #login {
+        padding: 10px 14px;
+        margin: 0;
+    }
+
+   
+    main {
+        width: 100%;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    #premium,
+    #seção_sobre {
+        width: 100%;
+        padding: 10px;
+        margin: 25px auto;
+    }
+
+    #premium h2,
+    #premium > p {
+        font-size: 20px;
+    }
+
+    #botao {
+        width: 90%;
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    #logo {
+        width: 75%;
+        height: auto;
+        max-width: 320px;
+    }
+    .carousel-card {
+        width: 100%;
+    }
+
+    .card-header {
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    .card-header h2 {
+        font-size: 20px;
+    }
+
+    .track {
+        gap: 10px;
+    }
+
+    .slide {
+        flex: 0 0 100%;
+        aspect-ratio: 16 / 10;
+    }
+
+    .flip-code {
+        font-size: 21px;
+    }
+
+    .flip-city {
+        font-size: 10px;
+    }
+
+    .tag {
+        top: 8px;
+        right: 8px;
+        font-size: 9px;
+        padding: 4px 7px;
+    }
+
+    .controls {
+        margin-top: 14px;
+    }
+
+    .arrow-btn {
+        width: 34px;
+        height: 34px;
+    }
+    .padrao,
+    .padrao2 {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .padrao {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #text-container {
+        padding: 5px;
+    }
+
+    #img-container1 {
+        width: 100%;
+        min-width: 0;
+        height: 220px;
+        margin: 0;
+    }
+
+    #img-container1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    main ul {
+        font-size: 16px;
+        padding-left: 22px;
+    }
+
+    #card-container,
+    #cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        padding: 18px;
+    }
+
+    #seção_sobre span {
+        font-size: 18px;
+    }
+
+    #seção_sobre p {
+        font-size: 15px;
+    }
+
+    /* PLANOS */
+    #planos {
+        width: 100%;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .plano,
+    .destaque {
+        width: 100%;
+        min-height: auto;
+        padding: 22px 18px;
+        transform: none;
+    }
+
+    .plano:hover {
+        transform: none;
+    }
+
+    .plano h4 {
+        font-size: 34px;
+    }
+
+    .plano p {
+        font-size: 14px;
+    }
+    #login-container,
+    #cadastro-container {
+        width: 94%;
+        margin: 25px auto;
+        flex-direction: column;
+    }
+
+    #login-image,
+    #cadastro-image {
+        width: 100%;
+        min-height: 220px;
+        padding: 20px 15px;
+    }
+
+    #login-image h1,
+    #cadastro-image h1 {
+        font-size: 25px;
+    }
+
+    #login-image p,
+    #cadastro-image p {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    #tela-login,
+    #tela-cadastro {
+        width: 100%;
+        min-height: auto;
+        padding: 22px 18px;
+    }
+
+    #tela-login h2,
+    #tela-cadastro h2 {
+        font-size: 25px;
+    }
+
+    #tela-login input,
+    #tela-cadastro input {
+        width: 100%;
+        padding: 11px;
+        font-size: 16px;
+    }
+
+    #login-button,
+    #cadastro-button {
+        width: calc(100% - 20px);
+        margin: 10px;
+        padding: 12px;
+    }
+
+    #esqueceu {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    #esqueceu-email {
+        width: 65%;
+        padding: 10px;
+    }
+
+    #botao-esqueceu {
+        width: 30%;
+        padding: 10px 5px;
+    }
+
+    footer {
+        padding: 30px 15px;
+        font-size: 20px;
+    }
+
+    footer h2,
+    footer h3 {
+        font-size: 22px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    footer a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    menu a {
+        min-width: 65px;
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    #logo {
+        width: 85%;
+    }
+
+    .padrao,
+    .padrao2 {
+        padding: 12px;
+    }
+
+    .padrao h2 {
+        font-size: 22px;
+    }
+
+    #img-container1 {
+        height: 180px;
+    }
+
+    .slide {
+        aspect-ratio: 4 / 3;
+    }
+
+    .flip-code {
+        font-size: 18px;
+    }
+
+    .flip-city {
+        font-size: 9px;
+    }
+
+    #premium h2,
+    #premium > p {
+        font-size: 18px;
+    }
+
+    #botao {
+        width: 100%;
+        padding: 14px;
+    }
+
+    #login-container,
+    #cadastro-container {
+        width: 96%;
+    }
+
+    #login-image,
+    #cadastro-image {
+        min-height: 190px;
+    }
+
+    #tela-login,
+    #tela-cadastro {
+        padding: 18px 14px;
+    }
+
+    #esqueceu {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #esqueceu-email,
+    #botao-esqueceu {
+        width: 100%;
+        margin: 0;
+    }
+
+    .plano h4 {
+        font-size: 30px;
+    }
+}
