@@ -117,22 +117,26 @@ a{
     animation: mexersozinho 1s ease-in-out infinite;
     padding: 10px;
 }
-@keyframes mexersozinho{
-  0%{
+@keyframes mexersozinho {
+  0%, 100% {
     transform: scale(1);
   }
-  30%{
-    transform: scale(1.04);
+  10% {
+    transform: scale(1.15);
   }
-  50%{
-    transform: scale(1.06);
-  }
-  70%{
-    transform: scale(1.04);
-  }
-  100%{
+  20% {
     transform: scale(1);
   }
+  30% {
+    transform: scale(1.10);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+#link-viagem {
+  animation: mexersozinho 1.6s ease-in-out infinite;
+  transform-origin: center;
 }
 #link-viagem:hover{
    transform: translateX(20px);
